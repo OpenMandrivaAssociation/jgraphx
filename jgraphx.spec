@@ -2,7 +2,7 @@
 
 Summary:	Java-based Diagram Component and Editor
 Name:		jgraphx
-Version:	1.3.1.3
+Version:	1.3.1.5
 Release:	%mkrel 1
 License:	BSD
 Group:		Development/Java
@@ -19,7 +19,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 Jgraphx is the a lightweight and feature-rich graph component for Java,
 and the successor to jgraph. It provides automatic 2D layout and routing
 for diagrams. Object and relations can be displayed in any Swing UI
-via provided zoomable component.
+via provided scalable component.
 
 %package javadoc
 Summary:	Javadoc for %{name}
@@ -54,6 +54,8 @@ cp -p lib/jgraphx.jar %{buildroot}%{_javadir}/%{name}-%{version}.jar
 pushd  %{buildroot}%{_javadir} 
     #create symlink
     ln -s %{name}-%{version}.jar %{name}.jar
+    #indexing
+    jar -i %{name}-%{version}.jar
 popd
 
 # javadoc
