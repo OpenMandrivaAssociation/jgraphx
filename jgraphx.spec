@@ -3,7 +3,7 @@
 Summary:	Java-based Diagram Component and Editor
 Name:		jgraphx
 Version:	1.2.0.10
-Release:	%mkrel 1
+Release:	%mkrel 2
 Epoch:		1
 License:	BSD
 Group:		Development/Java
