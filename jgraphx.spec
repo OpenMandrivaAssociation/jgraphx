@@ -81,3 +81,33 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_javadocdir}/%{name}-%{version}
 %{_javadocdir}/%{name}
+
+
+%changelog
+* Fri Jan 21 2011 Paulo Andrade <pcpa@mandriva.com.br> 1:1.4.1.0-1mdv2011.0
++ Revision: 632067
+- Update to jgraphx 1.4.1.0
+
+* Mon Dec 06 2010 Oden Eriksson <oeriksson@mandriva.com> 1:1.2.0.10-2mdv2011.0
++ Revision: 612447
+- the mass rebuild of 2010.1 packages
+
+* Fri May 07 2010 Tomasz Pawel Gajc <tpg@mandriva.org> 1:1.2.0.10-1mdv2010.1
++ Revision: 543285
+- downgrade to 1.2.0.10 version due to API mismatch in scilab (use Epoch)
+
+* Tue Apr 06 2010 Yuri Myasoedov <omerta13@mandriva.org> 1.3.1.5-1mdv2010.1
++ Revision: 532285
+- jar indexing was added in spec
+- new version 1.3.1.5
+
+* Mon Mar 22 2010 Yuri Myasoedov <omerta13@mandriva.org> 1.3.1.3-1mdv2010.1
++ Revision: 526625
+- Updating sources
+- Updating for new version of jgraphx 1.3.1.3
+
+* Sun Dec 20 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 1.2.0.3-1mdv2010.1
++ Revision: 480443
+- import jgraphx
+
+
