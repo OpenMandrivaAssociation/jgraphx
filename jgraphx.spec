@@ -25,13 +25,12 @@ component for Java. It is a rewrite of JGraph, also known as JGraph 6.
 %package javadoc
 Summary:        API Documentation for %{name}
 
-Group:          Documentation
+Group:          Development/Java
 Requires:       jpackage-utils
 Requires:       %{name} = %{EVRD}
 
 %description javadoc
 JavaDoc documentation for %{name}
-
 
 %prep
 %setup -q -n %{name}
@@ -41,7 +40,6 @@ rm -rf docs/api
 
 %build
 ant
-
 
 %install
 
@@ -56,13 +54,10 @@ ln -s %{name}-%{version}.jar \
 install -d %{buildroot}%{_javadocdir}/%{name}-%{version}
 cp -a docs/api/* %{buildroot}%{_javadocdir}/%{name}-%{version}
 
-
 %files
 %{_javadir}/*
 %doc license.txt
 
-
 %files javadoc
 %{_javadocdir}/*
-
 
