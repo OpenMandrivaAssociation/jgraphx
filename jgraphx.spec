@@ -1,7 +1,7 @@
 Name:           jgraphx
-Version:        2.2.0.2
+Version:	3.9.7
 Epoch:		1
-Release:        3
+Release:	1
 Summary:        Java Graph Drawing Component
 
 Group:          Development/Java
