@@ -6,7 +6,7 @@ Summary:        Java Graph Drawing Component
 
 Group:          Development/Java
 License:        BSD
-URL:            http://www.jgraph.com/jgraph.html
+URL:            https://www.jgraph.com/jgraph.html
 Source0:        http://www.jgraph.com/downloads/jgraphx/archive/%{name}-%(echo %{version} |sed 's/\./_/g').zip
 
 BuildRequires:  ant
